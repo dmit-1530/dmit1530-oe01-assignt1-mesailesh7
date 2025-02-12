@@ -3,15 +3,49 @@
     --blue-grey-100: #CFD8DC;
     --blue-grey-200: #B0BEC5;
     --blue-grey-900: #263238;
+    --blue-grey-950: #191919;
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+    --small-screen: 390px;
+    --medium-screen: 770px;
+    --large-screen: 1440px;
 }
 
+/* Libre baskerville  */
 body {
     color: #000;
-    text-align: center; 
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header, footer {
-    background-color: var(--blue-grey-50);
+header,
+footer {
+    background-color: var(--blue-grey-950);
     color: #fff;
-    padding: 2rem 4rem;   
+    padding: 2rem 4rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: var(--spacing-large)*9.4; */
+}
+
+.logo>img {
+    height: 58px;
+    width: var(--spacing-medium) * 5.75;
+}
+
+.logo>h1 {
+    font-size: 56px;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 16px;
 }

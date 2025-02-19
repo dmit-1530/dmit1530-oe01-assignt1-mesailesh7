@@ -60,7 +60,7 @@ footer {
 nav>ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 16px;
     list-style-type: none;
     padding-left: 0;
@@ -72,6 +72,53 @@ h2 {
 
 main {
     margin: 0 auto;
-    padding: 0 2rem;
 
 }
+
+.container-1 {
+    padding: 0 2rem;
+    padding-top: 64px;
+    background: var(--blue-grey-50);
+}
+
+.container-1>h2 {
+    font-size: 36px;
+    font-family: "Georgia", serif;
+}
+
+
+.container-1>button {
+    color: var(--blue-grey-50);
+    background-color: #111111;
+    border-radius: 6px;
+    padding: 16px 18px;
+    margin-top: 52px;
+    font-size: 16px;
+
+}
+
+.container-1>img {
+    border-radius: 8px;
+    height: auto;
+    width: 100%;
+    margin-top: 48px;
+    margin-bottom: 64px;
+}
+
+span {
+    display: block;
+    font-weight: bold;
+}
+
+.container-2 {
+    padding: 0 2rem;
+    padding-top: 64px;
+}
+
+.container-2 section:first-child>h2 {
+    font-family: "Georgia", serif;
+    font-size: 32px;
+
+}
+
+.container-2 p {}

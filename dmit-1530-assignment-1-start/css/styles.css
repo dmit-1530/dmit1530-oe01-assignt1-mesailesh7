@@ -79,12 +79,15 @@ main {
 .container-1 {
     padding: 0 2rem;
     padding-top: 4rem;
-    background: var(--blue-grey-50);
+    background-color: var(--blue-grey-50);
+
+
 }
 
 .container-1>h2 {
     font-size: 2.25rem;
     font-family: "Georgia", serif;
+    padding-bottom: 1rem;
 }
 
 
@@ -106,7 +109,7 @@ main {
     margin-bottom: 4rem;
 }
 
-span {
+.container-2 span {
     font-family: "Inter", serif;
     display: flex;
     align-items: center;
@@ -115,16 +118,13 @@ span {
 }
 
 .container-2 {
-    padding: 0 2.7rem;
-    padding-top: 4rem;
+    padding: 4rem 2.7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 
 }
-
-
 
 .container-2 section:first-child>h2 {
     font-family: "Georgia", serif;
@@ -136,28 +136,99 @@ span {
 
 .container-2>section h2 {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
+    margin: 0;
 }
 
 .container-2>section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
 }
 
+
 .quotation {
-    background-color: var(--blue-grey-200);
     color: white;
-    padding: 64px 32px;
+    background-color: #78909C;
+    padding: 4rem 2rem;
+}
+
+.quotation h2 {
+    font-family: "Georgia";
 }
 
 .quotation section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 3.75rem;
+    margin: 0 auto;
+}
+
+.quotation p {
+    margin: 0.5rem;
+}
+
+.redesigned {
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #CFD8DC;
+}
+
+/* Check the padding in here */
+.redesigned>section>h2>span {
+    font-family: "Inter", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.redesigned>section>h2 {
+    font-family: "Georgia";
+    font-size: 2rem;
+
+
+}
+
+.redesigned>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.redesigned>div>section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    text-align: start;
+    row-gap: 1rem;
+}
+
+.redesigned>div>section>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 0 0.8rem;
+    gap: 1rem;
+    text-align: start;
+    margin: 0;
+}
+
+.redesigned>div>section>h2>span {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-bottom: 1rem;
 }

@@ -26,10 +26,10 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements */
-ul,
+/* ul,
 ol {
     list-style: none;
-}
+} */
 
 /* Set core body defaults */
 body {

@@ -1,0 +1,152 @@
+:root {
+    --blue-grey-50: #ECEFF1;
+    --blue-grey-100: #CFD8DC;
+    --blue-grey-200: #B0BEC5;
+    --blue-grey-900: #263238;
+    --blue-grey-950: #191919;
+    /* --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+    --small-screen: 24.375rem;
+    --medium-screen: 48.125rem;
+    --large-screen: 90rem; */
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Libre baskerville  */
+
+
+/* ****************** */
+/* Small Size 24.375rem */
+/* ****************** */
+
+body {
+    color: #000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 24.375rem;
+
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+header {
+    background-color: var(--blue-grey-950);
+    color: #fff;
+    padding: 2rem 4rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: var(--spacing-large)*9.4; */
+}
+
+.logo>img {
+    height: 3.625rem;
+    width: var(--spacing-medium) *5.75;
+}
+
+
+.logo>h1 {
+    font-size: 3.5rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+
+
+
+.footer-logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    text-align: center;
+    /* width: var(--spacing-large)*9.4; */
+}
+
+.footer-logo>img {
+    height: 4.875rem;
+    width: var(--spacing-medium) *5.75;
+}
+
+
+.footer-logo>h2 {
+    font-size: 3.5rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+}
+
+
+footer {
+    background-color: var(--blue-grey-950);
+    color: #fff;
+    padding: 4rem 2rem;
+}
+
+footer>section>div>p {
+    text-align: left;
+    font-size: 0.75rem;
+    padding-right: 1rem;
+    color: var(--blue-grey-200);
+}
+
+
+.footer-about {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.footer-about>section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-about ul {
+    text-align: left;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+}
+
+footer>section>div:last-child {
+    font-size: 0.85rem;
+}
+
+footer>div {
+    padding-top: 3rem;
+    font-size: 0.85rem;
+}

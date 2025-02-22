@@ -7,10 +7,11 @@
     /* --spacing-small: 0.5rem;
     --spacing-medium: 1rem;
     --spacing-large: 2rem;
-    --small-screen: 390px;
-    --medium-screen: 770px;
-    --large-screen: 1440px; */
+    --small-screen: 24.375rem;
+    --medium-screen: 48.125rem;
+    --large-screen: 90rem; */
 }
+
 
 
 html {
@@ -22,16 +23,27 @@ html {
 
 
 /* ****************** */
-/* Small Size 390px */
+/* Small Size 24.375rem */
 /* ****************** */
 
 body {
     color: #000;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 60rem;
+    width: 100%;
     margin: 0 auto;
+    min-width: 24.375rem;
+
 }
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
 
 header {
     background-color: var(--blue-grey-950);
@@ -47,7 +59,7 @@ header {
 }
 
 .logo>img {
-    height: 58px;
+    height: 3.625rem;
     width: var(--spacing-medium) *5.75;
 }
 
@@ -127,7 +139,7 @@ main {
 
 }
 
-.container-2 section:first-child>h2 {
+.container-2>div:first-of-type>section>h2 {
     font-family: "Georgia", serif;
     font-size: 2rem;
     font-weight: 400;
@@ -137,16 +149,24 @@ main {
 
 .container-2>section h2 {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 0;
 }
 
-.container-2>section {
+.container-2>div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.container-2>div:last-of-type>section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    gap: 1rem;
 }
 
 
@@ -169,7 +189,7 @@ main {
     align-items: center;
     padding: 0 3.75rem;
     margin: 0 auto;
-    /*line-height: 24px;*/
+    /*line-height: 1.5rem;*/
 }
 
 .quotation p {
@@ -183,7 +203,7 @@ main {
     align-items: center;
     justify-content: space-around;
     background-color: #CFD8DC;
-    gap: 48px;
+    gap: 3rem;
 }
 
 /* Check the padding in here */
@@ -237,7 +257,7 @@ main {
 }
 
 .redesigned>div>section>img {
-    padding-top: 48px;
+    padding-top: 3rem;
 }
 
 .subscribers {
@@ -245,24 +265,24 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 64px 33px;
+    padding: 4rem 2.0625rem;
 }
 
 .subscribers>section {
     background: white;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 64px 16px;
+    padding: 4rem 1rem;
     text-align: center;
     gap: 1rem;
 }
 
 .subscribers>section>h2 {
     font-family: "Georgia", serif;
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 .subscribers button {
@@ -282,13 +302,13 @@ main {
 }
 
 .footer-logo>img {
-    height: 78px;
+    height: 4.875rem;
     width: var(--spacing-medium) *5.75;
 }
 
 
 .footer-logo>h2 {
-    font-size: 56px;
+    font-size: 3.5rem;
     font-family: "Libre Baskerville", serif;
     font-weight: 700;
 }
@@ -300,9 +320,9 @@ footer {
     padding: 4rem 2rem;
 }
 
-footer>div>section>p {
+footer>section>div>p {
     text-align: left;
-    font-size: 12px;
+    font-size: 0.75rem;
     padding-right: 1rem;
     color: var(--blue-grey-200);
 }
@@ -313,13 +333,14 @@ footer>div>section>p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: left;
 }
 
-.footer-about>div {
+.footer-about>section {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .footer-about ul {
@@ -328,9 +349,225 @@ footer>div>section>p {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    list-style: none;
 }
 
-footer>div>section>div:last-child {
+footer>section>div:last-child {
+    font-size: 0.85rem;
+}
+
+footer>div {
     padding-top: 3rem;
     font-size: 0.85rem;
+}
+
+@media screen and (min-width: 48rem) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav>ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+
+    .container-2 {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .container-2 div:first-child>section>h2 {
+        padding-bottom: 1.5rem;
+    }
+
+    .container-2 div:first-child>section>p {
+        font-size: 1.125rem;
+    }
+
+    .container-2>div:last-of-type {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        /* align-items: flex-start; */
+        /* justify-content: space-around; */
+        flex-direction: row;
+        row-gap: 2rem;
+        column-gap: 4rem;
+        text-align: left;
+    }
+
+    .container-2>div:last-of-type section {
+        width: 20rem;
+        align-items: start;
+        text-align: left;
+
+    }
+
+    .container-2>div:last-of-type h2 {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+
+    .container-2>div:last-of-type span {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .quotation h2 {
+        font-size: 2.25rem;
+        font-family: "Georgia";
+    }
+
+    .quotation>section {
+        padding: 0;
+    }
+
+    .redesigned {
+        gap: 0.75rem;
+    }
+
+    .redesigned>div {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    .redesigned>div>section {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+
+
+    .redesigned>div>section>img {
+        width: 51%;
+        height: auto;
+        border-radius: 0.5rem;
+        padding-top: 2rem;
+
+    }
+
+    .redesigned>div>section span {
+        display: block;
+    }
+
+    .redesigned>div>section ul {
+        padding-left: 2rem;
+
+    }
+
+
+    .redesigned>div>section:last-child {
+        flex-direction: row-reverse;
+    }
+
+    .subscribers>section {
+        padding: 4rem 2.5rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+
+    footer>section {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+
+    footer>section>div:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 40%;
+    }
+
+    .footer-about {
+        display: flex;
+        justify-content: space-around;
+        gap: 3rem;
+
+    }
+
+    footer>div {
+
+        width: 66%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+
+
+    @media screen and (min-width: 64rem) {
+        header {
+            padding: 2rem 8rem;
+        }
+
+        .container-1>p {
+            padding: 0 13rem;
+        }
+
+        .container-2 {
+            padding: 5rem 12rem;
+        }
+
+        .container-2>div:last-of-type {
+            column-gap: 3rem;
+        }
+
+        .quotation {
+            padding: 4rem 12rem;
+        }
+
+        .redesigned>section {
+            padding: 0.5rem 11.5rem;
+        }
+
+
+        .redesigned>div {
+            flex-direction: row;
+            gap: 2rem;
+            padding: 2rem 12rem;
+        }
+
+        .redesigned>div section,
+        .redesigned>div>section:last-child {
+            flex-direction: column;
+            width: 50%;
+            gap: 2rem
+        }
+
+        .redesigned>div>section>img {
+            width: 100%;
+            height: 25rem;
+            padding-top: 0;
+        }
+
+        .subscribers>section {
+            padding: 4rem 9.5rem;
+        }
+
+        footer>section {
+            padding: 0rem 13rem;
+        }
+
+        footer>div {
+            width: 52%;
+        }
+
+        footer>section>div>p {
+            width: 80%;
+        }
+
+
+    }
 }

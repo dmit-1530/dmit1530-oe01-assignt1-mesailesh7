@@ -106,16 +106,22 @@ main {
     font-size: 36px;
 }
 
-.art-gallery>div:first-of-type>div {
+.art-gallery>div:first-of-type {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: left;
     gap: 2rem;
     padding-top: 60px;
-
 }
 
+.art-gallery>div:first-of-type div {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
 .art-gallery>div:first-of-type h2 {
     font-family: "Inter";
@@ -228,16 +234,6 @@ main {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .footer-logo {
     display: flex;
     justify-content: space-around;
@@ -304,4 +300,83 @@ footer>section>div:last-child {
 footer>div {
     padding-top: 3rem;
     font-size: 0.85rem;
+}
+
+
+
+@media screen and (min-width: 48rem) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav>ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+
+    .art-gallery {
+        width: 100%;
+    }
+
+
+    .art-gallery img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+
+    .art-gallery>div:first-of-type {
+        padding: 0;
+        flex-direction: row;
+        background-color: orange;
+    }
+
+    .art-gallery>div:first-of-type div {
+        width: 50%;
+
+        background-color: darkgoldenrod;
+    }
+
+
+
+
+    /* .art-gallery>div {
+        width: 50%;
+    } */
+
+    /* .art-gallery>div:first-of-type {
+        padding-top: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+
+    } */
+
+    /* .art-gallery>div:first-of-type div {
+        width: 50%;
+        background-color: orange;
+    }  */
+
+
+
+
+    /* .art-gallery>div:last-of-type {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+
+    .art-gallery>div:last-of-type>div:last-of-type {
+        width: 50%;
+    }
+
+    .art-gallery>div:last-of-type img {} */
+
 }

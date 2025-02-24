@@ -21,12 +21,7 @@ html {
 }
 
 
-/* Libre baskerville  */
 
-
-/* ****************** */
-/* Small Size 24.375rem */
-/* ****************** */
 
 body {
     color: #000;
@@ -57,7 +52,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* width: var(--spacing-large)*9.4; */
+
 }
 
 .logo>img {
@@ -123,11 +118,13 @@ main {
     gap: 2rem;
 }
 
-.art-gallery>div:first-of-type h2 {
+.art-gallery>div:first-of-type h2,
+.art-gallery>div:first-of-type h3 {
     font-family: "Inter";
     font-weight: 700;
     font-size: 20px;
 }
+
 
 .art-gallery>p {
     font-family: "Inter";
@@ -239,7 +236,7 @@ main {
     justify-content: space-around;
     align-items: baseline;
     text-align: center;
-    /* width: var(--spacing-large)*9.4; */
+
 }
 
 .footer-logo>img {
@@ -316,67 +313,68 @@ footer>div {
         align-items: center;
         justify-content: space-around;
         gap: 1rem;
+
     }
 
-    .art-gallery {
-        width: 100%;
-    }
-
-
-    .art-gallery img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-    }
 
 
     .art-gallery>div:first-of-type {
-        padding: 0;
+        display: flex;
         flex-direction: row;
-        background-color: orange;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding-top: 0;
+    }
+
+    .art-gallery>div:first-of-type img {
+        flex: 1;
+        max-width: 45%;
+
+        height: auto;
     }
 
     .art-gallery>div:first-of-type div {
-        width: 50%;
+        flex: 1;
 
-        background-color: darkgoldenrod;
     }
 
 
+    .art-gallery>div:last-of-type {
 
-
-    /* .art-gallery>div {
-        width: 50%;
-    } */
-
-    /* .art-gallery>div:first-of-type {
-        padding-top: 0;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-
-    } */
-
-    /* .art-gallery>div:first-of-type div {
-        width: 50%;
-        background-color: orange;
-    }  */
+        align-items: center;
 
 
-
-
-    /* .art-gallery>div:last-of-type {
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-around;
-        align-items: flex-start;
     }
 
+    .art-gallery>div:last-of-type>div:first-of-type {
+        flex: 1;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .art-gallery>div:last-of-type {
+        gap: 2rem;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+    }
+
+    .art-gallery>div:last-of-type img {
+        max-width: 90%;
+        height: auto;
+    }
 
     .art-gallery>div:last-of-type>div:last-of-type {
-        width: 50%;
+        flex: 1;
     }
 
-    .art-gallery>div:last-of-type img {} */
+    .art-gallery>div:last-of-type>div:last-of-type {
+        gap: 1rem;
+    }
 
+
+    .cultural-hub {
+        align-items: center;
+    }
 }

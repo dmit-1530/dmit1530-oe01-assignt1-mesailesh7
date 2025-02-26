@@ -6,12 +6,6 @@
     --blue-grey-800: #37474F;
     --blue-grey-900: #263238;
     --blue-grey-950: #191919;
-    /* --spacing-small: 0.5rem;
-    --spacing-medium: 1rem;
-    --spacing-large: 2rem;
-    --small-screen: 24.375rem;
-    --medium-screen: 48.125rem;
-    --large-screen: 90rem; */
 }
 
 
@@ -57,7 +51,7 @@ header {
 
 .logo>img {
     height: 3.625rem;
-    width: var(--spacing-medium) *5.75;
+    width: 5.75rem;
 }
 
 
@@ -98,7 +92,7 @@ main {
 .art-gallery>h2 {
     font-family: "Georgia";
     font-weight: 400;
-    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 .art-gallery>div:first-of-type {
@@ -108,7 +102,7 @@ main {
     align-items: center;
     text-align: left;
     gap: 2rem;
-    padding-top: 60px;
+    padding-top: 3.75rem;
 }
 
 .art-gallery>div:first-of-type div {
@@ -122,7 +116,7 @@ main {
 .art-gallery>div:first-of-type h3 {
     font-family: "Inter";
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 
@@ -152,14 +146,14 @@ main {
 
 .quote {
     font-family: "Georgia";
-    font-size: 36px;
+    font-size: 2.25rem;
     text-align: center;
-    padding: 64px 2rem;
+    padding: 4rem 2rem;
 }
 
 .cultural-hub {
     background-color: var(--blue-grey-400);
-    padding: 64px 32px;
+    padding: 4rem 2rem;
     color: #FFFFFF;
 
     display: flex;
@@ -168,7 +162,7 @@ main {
 }
 
 .cultural-hub>h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: "Georgia";
     color: #FFFFFF;
     font-weight: 400;
@@ -181,7 +175,7 @@ main {
     flex-direction: column;
     text-align: left;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     gap: 1rem;
 }
 
@@ -190,7 +184,7 @@ main {
 }
 
 .features {
-    padding: 64px 2rem;
+    padding: 4rem 2rem;
     background-color: var(--blue-grey-800);
     color: #FFFFFF;
     display: flex;
@@ -201,7 +195,7 @@ main {
 }
 
 .features>h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: "Georgia";
     color: #FFFFFF;
     font-weight: 400;
@@ -221,14 +215,13 @@ main {
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    align-items: center;
 }
 
 .features>div>div ul,
 .features>div>div ul li {
 
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: left;
 }
 
@@ -243,7 +236,7 @@ main {
 
 .footer-logo>img {
     height: 4.875rem;
-    width: var(--spacing-medium) *5.75;
+    width: 92px;
 }
 
 
@@ -398,7 +391,7 @@ footer>div {
 
     .features>div ul {
         margin: 0;
-        letter-spacing: 0px;
+        letter-spacing: 0rem;
     }
 
     .features>div>div img {
@@ -442,7 +435,7 @@ footer>div {
 
 }
 
-@media screen and (min-width: 90rem) {
+@media screen and (min-width: 1440px) {
 
     header,
     .art-gallery,
